@@ -46,12 +46,12 @@
 						{# Public page hiding is done at the route level #}
 						{% if scores_visible() and user.team.place %}
 							{{ user.team.place }}
-							<small>place</small>
+							<small>名次</small>
 						{% endif %}
 					</h2>
 					<h2 id="user-team-score" class="text-center">
 						{{ user.team.score }}
-						<small>points</small>
+						<small>得分</small>
 					</h2>
 				</div>
 			{% else %}
@@ -61,13 +61,13 @@
 						{# Public page hiding is done at the route level #}
 						{% if scores_visible() and user.place %}
 							{{ user.place }}
-							<small>place</small>
+							<small>名次</small>
 						{% endif %}
 					</h2>
 					<h2 id="user-score" class="text-center">
 						{% if user.score %}
 							{{ user.score }}
-							<small>points</small>
+							<small>得分</small>
 						{% endif %}
 					</h2>
 				</div>
@@ -147,14 +147,14 @@
 
 				<div class="row">
 					<div class="col-md-12">
-						<h3>Solves</h3>
+						<h3>解题数据</h3>
 						<table class="table table-striped">
 							<thead>
 							<tr>
-								<td><b>Challenge</b></td>
-								<td class="d-none d-md-block d-lg-block"><b>Category</b></td>
-								<td><b>Value</b></td>
-								<td><b>Time</b></td>
+								<td><b>挑战</b></td>
+								<td class="d-none d-md-block d-lg-block"><b>题目类型</b></td>
+								<td><b>分值</b></td>
+								<td><b>解决时间</b></td>
 							</tr>
 							</thead>
 							<tbody>
@@ -175,7 +175,7 @@
 					</div>
 				</div>
 			{% else %}
-				<div class="text-center"><h3 class="spinner-error">No solves yet</h3></div>
+				<div class="text-center"><h3 class="spinner-error">暂无数据</h3></div>
 			{% endif %}
 		{% endif %}
 	</div>

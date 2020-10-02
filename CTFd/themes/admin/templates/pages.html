@@ -6,7 +6,7 @@
 {% block content %}
 <div class="jumbotron">
 	<div class="container">
-		<h1>Pages
+		<h1>全部页面
 			<a class="no-decoration" href="{{ url_for('admin.pages_new') }}">
 				<span class="create-page" role="button" data-toggle="tooltip" title="Create Page">
 					<i class="btn-fa fas fa-plus-circle"></i>
@@ -22,11 +22,11 @@
 			<table id="pages" class="table table-striped">
 				<thead>
 				<tr>
-					<td><b>Title</b></td>
-					<td><b>Route</b></td>
-					<td class="text-center"><b>Authentication</b></td>
-					<td class="text-center"><b>Hidden</b></td>
-					<td class="text-center"><b>Published</b></td>
+					<td><b>页面标题</b></td>
+					<td><b>路径</b></td>
+					<td class="text-center"><b>是否需要验证</b></td>
+					<td class="text-center"><b>是否在标题栏显示</b></td>
+					<td class="text-center"><b>是否发布</b></td>
 					<td class="text-center" width="10px"><b>Settings</b></td>
 				</tr>
 				</thead>
@@ -43,21 +43,21 @@
 						</td>
 						<td class="text-center">
 							{% if page.auth_required %}
-							Required
+							需要
 							{% else %}
 							{% endif %}
 						</td>
 						<td class="text-center">
 							{% if page.hidden %}
-								Hidden
+								隐藏
 							{% else %}
 							{% endif %}
 						</td>
 						<td class="text-center">
 							{% if page.draft %}
-								Draft
+								草稿
 							{% else %}
-								Published
+								发布
 							{% endif %}
 						</td>
 						<td class="text-center">

@@ -3,7 +3,7 @@
 {% block content %}
 	<div class="jumbotron">
 		<div class="container">
-			<h1>Notifications</h1>
+			<h1>通知公告</h1>
 		</div>
 	</div>
 	<div class="container">
@@ -12,18 +12,18 @@
 				<form method="POST" id="notifications_form">
 					<div class="form-group">
 						<label>
-							Title
+							标题
 							<small class="form-text text-muted">
-								Notification title
+								通知公告标题
 							</small>
 						</label>
 						<input class="form-control" type="text" name="title">
 					</div>
 					<div class="form-group">
 						<label>
-							Content
+							内容
 							<small class="form-text text-muted">
-								Notification contents can be made up of HTML
+								通知公告内容，支持HTML语法
 							</small>
 						</label>
 						<textarea class="form-control" type="text" name="content" rows="3"></textarea>
@@ -32,9 +32,9 @@
 						<div class="col">
 							<div class="form-group">
 								<label>
-									Type
+									类型
 									<small class="form-text text-muted">
-										What type of notification users receive
+										用户收到的通知类型
 									</small>
 								</label>
 							</div>
@@ -44,30 +44,30 @@
 							</div>
 							<div class="form-check form-check-inline pr-1">
 								<input class="form-check-input" type="radio" name="type" value="alert" id="type-radio-alert">
-								<label class="form-check-label" for="type-radio-alert">Alert</label>
+								<label class="form-check-label" for="type-radio-alert">警告</label>
 							</div>
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="type" value="background" id="type-radio-bg">
-								<label class="form-check-label" for="type-radio-bg">Background</label>
+								<label class="form-check-label" for="type-radio-bg">背景</label>
 							</div>
 						</div>
 						<div class="col">
 							<div class="form-group">
 								<label>
-									Sound
+									声音
 									<small class="form-text text-muted">
-										Play sound for users
+										为选手播放声音
 									</small>
 								</label>
 							</div>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="sound" value="true" id="sound-enable" checked>
-								<label class="form-check-label" for="sound-enable">Play Sound</label>
+								<label class="form-check-label" for="sound-enable">播放声音</label>
 							</div>
 						</div>
 					</div>
 					<div class="float-right">
-						<button type="submit" class="btn btn-success text-center">Submit</button>
+						<button type="submit" class="btn btn-success text-center">提交</button>
 					</div>
 				</form>
 			</div>

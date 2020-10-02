@@ -6,7 +6,7 @@
 {% block content %}
 <div class="jumbotron">
 	<div class="container">
-		<h1>Create Challenge</h1>
+		<h1>创建赛题</h1>
 	</div>
 </div>
 
@@ -36,8 +36,8 @@
 									<small class="form-text text-muted">&nbsp;</small>
 								</label>
 								<select class="form-control custom-select w-100" name="flag_data">
-									<option value="">Case Sensitive</option>
-									<option value="case_insensitive">Case Insensitive</option>
+									<option value="">大小写敏感</option>
+									<option value="case_insensitive">不敏感</option>
 								</select>
 							</div>
 						</div>
@@ -56,11 +56,11 @@
 					<div class="form-group">
 						<label>
 							State<br>
-							<small class="form-text text-muted">Should the challenge be visible to users</small>
+							<small class="form-text text-muted">是否用户可见</small>
 						</label>
 						<select class="form-control custom-select" name="state">
-							<option value="visible">Visible</option>
-							<option value="hidden" selected>Hidden</option>
+							<option value="visible">可见</option>
+							<option value="hidden" selected>隐藏</option>
 						</select>
 					</div>
 					<input id="challenge_id" type="hidden" name="challenge_id">

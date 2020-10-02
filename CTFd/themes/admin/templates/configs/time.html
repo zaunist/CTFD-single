@@ -3,17 +3,17 @@
 		<ul class="nav nav-tabs mb-3">
 			<li class="nav-item">
 				<a class="nav-link active" href="#start-date" aria-controls="start-date" role="tab" data-toggle="tab">
-					Start Time
+					开始时间
 				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#end-date" aria-controls="end-date" role="tab" data-toggle="tab">
-					End Time
+					结束时间
 				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#freeze-date" aria-controls="freeze-date" role="tab" data-toggle="tab">
-					Freeze Time
+					冻结时间
 				</a>
 			</li>
 		</ul>
@@ -22,9 +22,8 @@
 			<div role="tabpanel" class="tab-pane active" id="start-date">
 				<div class="row" id="start-date">
 					<div class="col-md-12">
-						<p>This is the time when the competition will begin. Challenges will automatically
-							unlock and users will be able to submit answers.</p>
-						<sub class="text-right mb-3">* All time fields required</sub>
+						<p>比赛开始时间，挑战将自动解锁，用户可进行提交flag.</p>
+						<sub class="text-right mb-3">* 时间需要填写完整</sub>
 					</div>
 
 					<div class="form-group col-md-2">
@@ -57,13 +56,13 @@
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="start-timezone">Timezone:</label>
+						<label for="start-timezone">时区:</label>
 						<select class="form-control custom-select start-date" id="start-timezone">
 						</select>
 					</div>
 
 					<div class="form-group col-md-12">
-						<label for="start-local">Local Time:</label>
+						<label for="start-local">当地时间:</label>
 						<input class="form-control" id='start-local' type='text'
 							   placeholder="Start Date (Local Time)" readonly>
 					</div>
@@ -75,7 +74,7 @@
 					</div>
 
 					<div class="form-group col-md-12">
-						<label>UTC Timestamp:</label>
+						<label>UTC时间戳:</label>
 						<input class="form-control" id='start' name='start' type='text'
 							   placeholder="Start Date (UTC timestamp)"
 							   {% if start is defined and start != None %}value="{{ start }}"{% endif %} readonly>
@@ -85,9 +84,8 @@
 			<div role="tabpanel" class="tab-pane" id="end-date">
 				<div class="row" id="end-date">
 					<div class="col-md-12">
-						<p>This is the time when the competition will end. Challenges will automatically
-							close and users won't be able to submit answers.</p>
-						<sub class="text-right mb-3">* All time fields required</sub>
+						<p>比赛结束时间，挑战将自动关闭，用户无法提交flag.</p>
+						<sub class="text-right mb-3">* 时间需要填写完整</sub>
 					</div>
 
 					<div class="form-group col-md-2">
@@ -123,7 +121,7 @@
 						<label>
 							<input id="view_after_ctf" name="view_after_ctf" type="checkbox"
 								   {% if view_after_ctf %}checked{% endif %}>
-							Allow challenges to be viewed (no submissions are recorded) after the CTF End Time.
+							比赛结束后允许查看题目。.
 						</label>
 					</div>
 
@@ -156,9 +154,7 @@
 			<div role="tabpanel" class="tab-pane" id="freeze-date">
 				<div class="row" id="freeze-date">
 					<div class="col-md-12">
-						<p>Freeze time specifies the timestamp that the competition will be frozen to.
-							All solves before the freeze time will be shown, but new solves won't be shown to
-							users. </p>
+						<p>冻结时间用于指定挑战冻结的时间点，将显示冻结之前的解题数据，之后提交的解题将不予显示. </p>
 						<sub class="text-right mb-3">* All time fields required</sub>
 					</div>
 
@@ -219,6 +215,6 @@
 			</div>
 		</div>
 
-		<button type="submit" class="btn btn-md btn-primary float-right">Update</button>
+		<button type="submit" class="btn btn-md btn-primary float-right">确认</button>
 	</form>
 </div>

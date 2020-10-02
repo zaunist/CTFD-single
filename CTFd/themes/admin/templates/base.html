@@ -42,32 +42,32 @@
 			</button>
 			<div class="collapse navbar-collapse" id="base-navbars">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.statistics') }}">Statistics</a></li>
-					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.notifications') }}">Notifications</a>
+					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.statistics') }}">数据统计</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.notifications') }}">公告</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Pages</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="{{ url_for('admin.pages_listing') }}">All Pages</a>
-							<a class="dropdown-item" href="{{ url_for('admin.pages_new') }}">New Page</a>
+							<a class="dropdown-item" href="{{ url_for('admin.pages_listing') }}">查看全部页面</a>
+							<a class="dropdown-item" href="{{ url_for('admin.pages_new') }}">新建页面</a>
 						</div>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.users_listing') }}">Users</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.users_listing') }}">用户管理</a></li>
 					{% if get_config('user_mode') == 'teams' %}
-					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.teams_listing') }}">Teams</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.teams_listing') }}">团队管理</a></li>
 					{% endif %}
-					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.scoreboard_listing') }}">Scoreboard</a></li>
-					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.challenges_listing') }}">Challenges</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.scoreboard_listing') }}">得分板</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.challenges_listing') }}">挑战管理</a></li>
 					<li class="nav-item dropdown">
 						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-						   aria-haspopup="true" aria-expanded="true">Submissions</a>
+						   aria-haspopup="true" aria-expanded="true">提交记录</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="{{ url_for('admin.submissions_listing') }}">All Submissions</a>
-							<a class="dropdown-item" href="{{ url_for('admin.submissions_listing', submission_type='correct') }}">Correct Submissions</a>
-							<a class="dropdown-item" href="{{ url_for('admin.submissions_listing', submission_type='incorrect') }}">Wrong Submissions</a>
+							<a class="dropdown-item" href="{{ url_for('admin.submissions_listing') }}">全部提交</a>
+							<a class="dropdown-item" href="{{ url_for('admin.submissions_listing', submission_type='correct') }}">正确提交</a>
+							<a class="dropdown-item" href="{{ url_for('admin.submissions_listing', submission_type='incorrect') }}">错误提交</a>
 						</div>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.config') }}">Config</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ url_for('admin.config') }}">配置</a></li>
 
 					{% set plugin_menu = get_admin_plugin_menu_bar() %}
 					{% set plugins = get_configurable_plugins() %}
@@ -113,7 +113,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<a class="btn btn-warning" href="{{ get_config('version_latest') }}">
-					A new CTFd version is available!
+					CTFd 又更新了!
 				</a>
 			</div>
 		</div>
@@ -128,9 +128,9 @@
 
 	<footer class="footer pt-2">
 		<div class="container text-center">
-			<a href="https://ctfd.io" class="text-secondary">
+			<a class="text-secondary">
 				<small class="text-muted">
-					Powered by CTFd
+					Powered by Bozhong
 				</small>
 			</a>
 			<span>
