@@ -65,7 +65,7 @@ const createGraph = () => {
     if (teams.length === 0) {
       // Replace spinner
       graph.html(
-        '<div class="text-center"><h3 class="spinner-error">No solves yet</h3></div>'
+        '<div class="text-center"><h3 class="spinner-error"></h3></div>'
       );
       return;
     }

@@ -13,8 +13,8 @@
 	<div class="row">
 		<div class="col-md-2 offset-md-1">
 			<div class="nav flex-column nav-pills" role="tablist">
-				<a class="nav-link active" id="settings-profile-tab" data-toggle="pill" href="#profile" role="tab">Profile</a>
-				<a class="nav-link" id="settings-tokens-tab" data-toggle="pill" href="#tokens" role="tab">Access Tokens</a>
+				<a class="nav-link active" id="settings-profile-tab" data-toggle="pill" href="#profile" role="tab">个人</a>
+				<a class="nav-link" id="settings-tokens-tab" data-toggle="pill" href="#tokens" role="tab">访问令牌</a>
 			</div>
 		</div>
 		<div class="col-md-8">
@@ -73,7 +73,7 @@
 						</div>
 						<div class="form-group">
 							<label for="website-input">
-								Website
+								网站
 							</label>
 							<input class="form-control" type="url" name="website" id="website-input"
 								value="{% if website %}{{website}}{% endif %}" />
@@ -104,7 +104,7 @@
 					<form method="POST"id="user-token-form">
 						<div class="form-group">
 							<label for="name-input">
-								Expiration
+								到期
 							</label>
 							<input class="form-control" type="date" name="expiration" id="expiration-input" />
 						</div>
@@ -120,10 +120,10 @@
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<td class="text-center"><b>Type</b></td>
-								<td class="text-center"><b>Created</b></td>
-								<td class="text-center"><b>Expiration</b></td>
-								<td class="text-center"><b>Delete</b></td>
+								<td class="text-center"><b>类型</b></td>
+								<td class="text-center"><b>已经创建的</b></td>
+								<td class="text-center"><b>到期</b></td>
+								<td class="text-center"><b>删除</b></td>
 							</tr>
 						</thead>
 						<tbody>
