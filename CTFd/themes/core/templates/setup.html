@@ -6,7 +6,7 @@
 {% block content %}
 	<div class="jumbotron">
 		<div class="container">
-			<h1>Setup</h1>
+			<h1>设置</h1>
 		</div>
 	</div>
 	<div class="container">
@@ -46,7 +46,7 @@
 							<label>
 								CTF Name<br>
 								<small class="form-text text-muted">
-									Name for the CTF
+									比赛名称
 								</small>
 							</label>
 							<input class="form-control" type="text" id="ctf_name" name="ctf_name" />
@@ -54,9 +54,9 @@
 
 						<div class="form-group">
 							<label>
-								CTF Description<br>
+								描述<br>
 								<small class="form-text text-muted">
-									Description for the CTF
+									比赛描述
 								</small>
 							</label>
 							<textarea class="form-control" type="text" id="ctf_description" name="ctf_description" rows="5"></textarea>
@@ -64,7 +64,7 @@
 
 						<div class="form-group">
 							<label>
-								CTF User Mode
+								单人模式
 								<small class="form-text text-muted">
 									User Mode for the CTF. <br>
 									Dictates whether users join teams to play (Team Mode) or
@@ -86,7 +86,7 @@
 					<div class="tab-pane fade" id="administration" role="tabpanel">
 						<div class="form-group">
 							<label>
-								Admin Username<br>
+								管理员用户名<br>
 								<small class="form-text text-muted">
 									Your username for the administration account
 								</small>
@@ -95,7 +95,7 @@
 						</div>
 						<div class="form-group">
 							<label>
-								Admin Email<br>
+								管理员邮箱<br>
 								<small class="form-text text-muted">
 									Your email address for the administration account
 								</small>
@@ -104,19 +104,12 @@
 						</div>
 						<div class="form-group">
 							<label>
-								Admin Password<br>
+								管理员密码<br>
 								<small class="form-text text-muted">
 									Your password for the administration account
 								</small>
 							</label>
 							<input class="form-control" type="password" name="password" required/>
-						</div>
-
-						<div class="form-check">
-							<label class="form-check-label">
-								<input class="form-check-input" type="checkbox" value="" id="newsletter-checkbox" checked>
-								Subscribe email address to the CTFd LLC Newsletter for news and updates
-							</label>
 						</div>
 
 						<div class="float-right">
@@ -128,7 +121,7 @@
 					<div class="tab-pane fade" id="style" role="tabpanel">
 						<div class="form-group">
 							<label>
-								Theme<br>
+								主题<br>
 								<small class="form-text text-muted">
 									CTFd Theme to use
 								</small>
@@ -141,7 +134,7 @@
 						</div>
 						<div class="form-group">
 							<label>
-								Theme Color
+								主题颜色
 								<small class="form-text text-muted">
 									Color used by theme to control aesthetics. Requires theme support.
 								</small>
@@ -166,18 +159,18 @@
 					<div class="tab-pane fade" id="datetime" role="tabpanel">
 						<div class="form-group">
 							<label>
-								Start Time<br>
+								开始时间<br>
 								<small class="form-text text-muted">
 									Time when your CTF is scheduled to start. Optional.
 								</small>
 							</label>
 							<div class="row">
 								<div class="col-md-4">
-									<label>Date</label>
+									<label>日期</label>
 									<input class="form-control" id="start-date" type="date" placeholder="yyyy-mm-dd" data-preview="#start"/>
 								</div>
 								<div class="col-md-4">
-									<label>Time</label>
+									<label>时间</label>
 									<input class="form-control" id="start-time" type="time" placeholder="hh:mm" data-preview="#start"/>
 								</div>
 								<div class="col-md-4">
@@ -189,18 +182,18 @@
 
 						<div class="form-group">
 							<label>
-								End Time<br>
+								结束时间<br>
 								<small class="form-text text-muted">
 									Time when your CTF is scheduled to end. Optional.
 								</small>
 							</label>
 							<div class="row">
 								<div class="col-md-4">
-									<label>Date</label>
+									<label>日期</label>
 									<input class="form-control" id="end-date" type="date" placeholder="yyyy-mm-dd" data-preview="#end"/>
 								</div>
 								<div class="col-md-4">
-									<label>Time</label>
+									<label>时间</label>
 									<input class="form-control" id="end-time" type="time" placeholder="hh:mm" data-preview="#end"/>
 								</div>
 								<div class="col-md-4">
@@ -216,31 +209,13 @@
 							</button>
 						</div>
 					</div>
-					<div class="tab-pane fade" id="integrations" role="tabpanel">
-						<div class="form-group">
-							<h4>MajorLeagueCyber Integration</h4>
-							<p>
-							MajorLeagueCyber (MLC) is a cyber security event tracker written and maintained by the developers of CTFd.
-							Set up MLC integration to:
-							<ul>
-								<li>display your event on the MLC website and mailing list</li>
-								<li>share and track participant statistics</li>
-								<li>provide live updates in team Slack or Discord groups</li>
-								<li>archive challenges, team participation &amp; more</li>
-							</ul>
-							</p>
-							<button type="button" id="integration-mlc" class="btn btn-primary btn-block">
-								Setup
-							</button>
-						</div>
-
 						<br>
 						<hr>
 						<br>
 
 						<div class="submit-row float-right">
 							<button type="submit" tabindex="0" class="btn btn-md btn-primary btn-outlined">
-								Finish
+								完成
 							</button>
 						</div>
 					</div>
