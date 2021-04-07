@@ -11,6 +11,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirror.tuna.tsinghua.edu.cn/g' /etc/apk/rep
         linux-headers \
         libffi-dev \
         gcc \
+        g++ \
         make \
         musl-dev \
         py-pip \
