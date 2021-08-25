@@ -140,7 +140,7 @@ def setup():
     <div class="col-md-6 offset-md-3">
         <img class="w-100 mx-auto d-block" style="max-width: 500px;padding: 50px;padding-top: 14vh;" src="themes/core/static/img/logo.png" />
         <h3 class="text-center">
-            <p>西安石油大学网络安全协会</p>
+            <p>CTF</p>
         </h3>
         <br>
         <h4 class="text-center">
